@@ -4,13 +4,15 @@
       v-bind:class="{ 'expanded': showMobileMenu }"
     >
       <div class="container is-fluid navbar-container">
-        <div class="navbar-brand">
+        <div class="navbar-brand"
+          v-on:click="closeMobileMenu()"
+        >
           <Logo />
         </div>
 
         <div id="#nav-burger-trigger" class="navbar-burger"
           v-bind:class="{ 'is-active': showMobileMenu }"
-          v-on:click="showMobileMenu = !showMobileMenu"
+          v-on:click="toggleMobileMenu()"
         >
           <span></span>
           <span></span>
@@ -21,14 +23,14 @@
         v-bind:class="{ 'is-active': showMobileMenu }"
       >
         <div class="navbar-start"
-          v-on:click="showMobileMenu = false"
+          v-on:click="closeMobileMenu()"
         >
           <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
           <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
           <nuxt-link to="/prata" class="navbar-item">Cambio</nuxt-link>
         </div>
         <div class="navbar-end"
-          v-on:click="showMobileMenu = false"
+          v-on:click="closeMobileMenu()"
         >
           <nuxt-link exact to="/" class="navbar-item">Acerca de</nuxt-link>
           <nuxt-link to="/rufina" class="navbar-item">Ofertas</nuxt-link>
@@ -239,13 +241,25 @@ export default {
       showMobileMenu: false
     }
   },
-  watch: {
-    showMobileMenu: function (newVal) {
-      if (newVal) {
-        document.body.classList.add('modal-open')
+  methods: {
+    toggleMobileMenu () {
+      var vm = this
+      vm.showMobileMenu = !vm.showMobileMenu
+      if (vm.showMobileMenu) {
+        vm.openMobileMenu()
       } else {
-        document.body.classList.remove('modal-open')
+        vm.closeMobileMenu()
       }
+    },
+    closeMobileMenu () {
+      var vm = this
+      document.body.classList.remove('modal-open')
+      vm.showMobileMenu = false
+    },
+    openMobileMenu () {
+      var vm = this
+      document.body.classList.add('modal-open')
+      vm.showMobileMenu = true
     }
   }
 }
