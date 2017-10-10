@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "buefy": "^0.5.1",
+    "gsap": "^1.20.3",
     "nuxt": "^1.0.0-rc8",
     "vue-smooth-scroll": "^1.0.13"
   },
