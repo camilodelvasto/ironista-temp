@@ -18,3 +18,13 @@
     min-height: calc(100vh - 75px -6rem);
   }
 }
+
+h1.title {
+  .title-standard {
+    background: rgba($color-bg-dark,0.7);
+  }
+  .title-emphasis {
+    background: rgba($color-bg-dark,0.7);
+    font-style: italic;
+  }
+}

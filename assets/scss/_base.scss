@@ -9,15 +9,15 @@ $font-primary: "Cardo", serif;
 $font-secondary: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 // Colors
+$color-bg-light: #FFFFFF; //white
+$color-bg-dark: #161c20; //almost black
 $color-text: #000;
 $color-text-light: #FFFFFF;
-$color-emphasis: red; //red 
+$color-emphasis: rgb(140, 121, 0); //dark yellow 
 $color-emphasis-alt: rgb(252, 241, 19); //yellow 
 $color-bg-0: #FFFFFF;
 $color-bg-1: #F0F0F0;
 $color-bg-2: #B6B6B6; //magnesium
-$color-bg-light: #FFFFFF; //white
-$color-bg-dark: #161c20; //almost black
 
 // Media breakpoints, taken from https://medium.com/developing-with-sass/refactoring-my-simple-sass-breakpoint-mixin-71205dd6badd
 $xs: ( max:  767px );

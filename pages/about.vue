@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import socialImage from '~/assets/img/dabbawala.jpg'
+import socialImage from '~/assets/img/street-art-graffiti.jpg'
 
 export default {
   transition: 'bounce',
