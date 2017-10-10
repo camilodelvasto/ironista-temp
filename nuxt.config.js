@@ -25,13 +25,19 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Aprendizaje Colectivo' },
-      { hid: 'og:title', property: 'og:title', content: 'Aprendizaje Colectivo' },
+      { hid: 'description', name: 'description', content: 'Laboratorio Cultural' },
+      { hid: 'og:title', property: 'og:title', content: 'Laboratorio Cultural' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'Ironista' },
-      { hid: 'og:description', property: 'og:description', content: 'Ironista: Aprendizaje Colectivo' },
+      { hid: 'og:description', property: 'og:description', content: 'Ironista: Laboratorio Cultural' },
+      { hid: 'og:url', property: 'og:url', content: 'https://ironista.com/' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: 'Ironista: Laboratorio Cultural' },
+      { hid: 'og:image', property: 'og:image', content: 'https://res.cloudinary.com/startics/image/upload/v1507608011/ironista-logo-transparente_wkywgl.png' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'ironista' },
+      { hid: 'og:description', property: 'og:description', content: 'Laboratorio Cultural' },
     ],
     script: [
-      { innerHTML: '{ "@context" : "http://schema.org", "@type" : "Organization", "legalName" : "Ironista", "url" : "https://ironista.com/", "logo" : "" }', type: 'application/ld+json' }
+      { innerHTML: '{ "@context" : "http://schema.org", "@type" : "Organization", "legalName" : "ironista", "url" : "https://ironista.com/", "logo" : "https://res.cloudinary.com/startics/image/upload/v1507608011/ironista-logo-transparente_wkywgl.png", "contactPoint" : [{ "@type" : "ContactPoint", "telephone" : "+573057112020", "contactType" : "sales" }], "sameAs" : [ "https://facebook.com/ironist4/" ] }', type: 'application/ld+json' }
     ],
     __dangerouslyDisableSanitizers: ['script'],
     link: [

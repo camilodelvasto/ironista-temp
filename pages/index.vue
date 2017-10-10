@@ -75,7 +75,8 @@ export default {
 }
 
 .hero.is-primary {
-  background: transparent;
+  background-color: transparent;
+  background-size: cover;
 }
 
 </style>
