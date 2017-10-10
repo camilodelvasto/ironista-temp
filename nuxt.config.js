@@ -54,7 +54,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  plugins: ['~/plugins/buefy.js'],
+  plugins: ['~/plugins/buefy.js', '~/plugins/smooth-scroll.js'],
   css: ['~/assets/main.scss'],
   build: {
     /*

@@ -26,15 +26,15 @@
           v-on:click="closeMobileMenu()"
         >
           <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
-          <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
-          <nuxt-link to="/prata" class="navbar-item">Cambio</nuxt-link>
+          <nuxt-link to="/aprendizaje-colectivo" class="navbar-item">Aprendizaje Colectivo</nuxt-link>
+          <nuxt-link to="/contacto" class="navbar-item">Contacto</nuxt-link>
         </div>
         <div class="navbar-end"
           v-on:click="closeMobileMenu()"
         >
           <nuxt-link exact to="/" class="navbar-item">Acerca de</nuxt-link>
-          <nuxt-link to="/rufina" class="navbar-item">Ofertas</nuxt-link>
-          <nuxt-link to="/prata" class="navbar-item">Contacto</nuxt-link>
+          <nuxt-link to="/how" class="navbar-item">Ofertas</nuxt-link>
+          <nuxt-link to="/contacto" class="navbar-item">Contacto</nuxt-link>
         </div>
       </div>
     </nav>
@@ -50,7 +50,7 @@
 
   @include breakpoint($bulma) {
     display: block;
-    transform: translate(-20px,13px);
+    transform: translate(0px,13px);
   }
 
   span {
@@ -150,6 +150,10 @@
       text-align: center;
       font-size: 30px;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       @include breakpoint($sm) {
         font-size: 50px;
         text-align: right;
@@ -240,6 +244,9 @@ export default {
     return {
       showMobileMenu: false
     }
+  },
+  mounted () {
+    this.showMobileMenu = false
   },
   methods: {
     toggleMobileMenu () {

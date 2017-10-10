@@ -5,7 +5,7 @@
         <div class="container">
           <div class="statement-large">
             <span class="st-1">Edison bulb wolf humblebrag, chambray skateboard tbh shoreditch four loko unicorn semiotics. Hammock banh mi chillwave, brunch before they sold out roof party fixie prism ramps blog. Ramps yr four dollar toast hammock street art swag lyft, meggings schlitz chicharrones offal vegan selvage normcore.</span>
-            <nuxt-link to="/about">¿Por qué lo hacemos?</nuxt-link>
+            <nuxt-link to="/#next">¿Por qué lo hacemos?</nuxt-link>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default {
     css: false,
     beforeEnter (el) {
       TweenMax.set(el, {
-        transformPerspective: 600,
+        transformPerspective: 100,
         perspective: 300,
         transformStyle: 'preserve-3d'
       })
