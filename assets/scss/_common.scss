@@ -20,12 +20,14 @@
 }
 
 h1.title {
-  .title-standard {
+  span {
+    color: white;
     background: rgba($color-bg-dark,0.7);
-  }
-  .title-emphasis {
-    background: rgba($color-bg-dark,0.7);
-    font-style: italic;
+    font-family: $font-secondary;
+
+    &.title-emphasis {
+      font-style: italic;
+    }
   }
 }
 
@@ -41,6 +43,7 @@ h1.title {
 
   .statement-body {
     font-size: 28px;
+    font-family: $font-secondary;
 
     @include breakpoint($sm) {
       font-size: 35px;
@@ -60,5 +63,50 @@ h1.title {
 
   a:hover {
     text-decoration: underline;
+  }
+
+  .font-text {
+    font-family: $font-secondary;
+  }
+}
+
+form {
+  padding-bottom: 40px;
+
+  .field {
+    margin-bottom: 20px !important;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    border-radius: 0 !important;
+
+    &:focus {
+      border-color: $color-emphasis !important;
+      outline: none;
+    }
+  }
+
+  button {
+    &.button-cta {
+      background-color: $color-emphasis-alt;
+      border: none;
+      color: $color-bg-dark;
+      transition: color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+
+      &:hover {
+        background-color: $color-bg-dark;
+        color: white;
+      }
+    }
+  }
+
+  .select:not(.is-multiple):after {
+    border-color: $color-emphasis;
   }
 }

@@ -26,20 +26,4 @@ export default {
 
 <style scoped lang="scss">
 
-.statement {
-  margin-top: 40px;
-}
-
-.subtitle {
-  font-size: 30px;
-  padding-top: 20px;
-  display: block;
-  text-align: right;
-}
-
-.hero.is-primary {
-  background-color: transparent;
-  background-size: cover;
-}
-
 </style>

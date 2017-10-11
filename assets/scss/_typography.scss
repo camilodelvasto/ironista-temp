@@ -17,7 +17,7 @@ html, body {
   h3,
   h4,
   h5 {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     color: $color-emphasis;
   }
 
@@ -27,6 +27,7 @@ html, body {
   }
 
   h1 {
+    font-family: $font-secondary;
     font-size: 28px;
     margin-top: 40px;
 
@@ -49,18 +50,20 @@ html, body {
     text-transform: uppercase;
     color: $color-bg-2;
     font-family: $font-glacial;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.25em;
     margin-bottom: 5px;
   }
 
 
   p {
     font-size: 20px;
-    font-family: $font-secondary;
+    font-family: $font-primary;
   }
-}
+  
+  p, div, input, textarea, button, select {
+    font-family: $font-primary;
+    line-height: 1.38;
+    color: $color-bg-dark;
+  }
 
-p, div, span, input, textarea {
-  font-family: $font-primary;
-  line-height: 1.38;
 }

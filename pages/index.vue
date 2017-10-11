@@ -7,8 +7,7 @@
         <div class="container">
           <div class="title-wrapper" v-for="(statement, index) in statements" >
             <transition name="fade">
-              <h1 class="title" v-if="index === currentStatement % statements.length">
-                <div v-html="statement"></div>
+              <h1 class="title" v-if="index === currentStatement % statements.length" v-html="statement">
               </h1>
             </transition>
             <a v-smooth-scroll="{ duration: 500, offset: -74 }" href="#aprendizaje-intro" class="hero-chevron">
@@ -85,7 +84,7 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 10000)
+      this.timer = setInterval(this.next, 1000000)
     },
     next: function () {
       this.currentStatement++
@@ -185,6 +184,7 @@ export default {
   a {
     .content {
       color: $color-text;
+      font-family: $font-secondary;
     }
 
     &:hover {
