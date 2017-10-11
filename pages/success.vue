@@ -4,7 +4,7 @@
       <div class="container">
         <div class="font-text">
           <h1>Hemos recibido su mensaje</h1>
-          <p>Gracias, {{ senderName }}, por su mensaje. En breve nos pondremos en contacto.</p>
+          <p>Gracias por su mensaje. En breve nos pondremos en contacto.</p>
         </div>
       </div>
     </section>
