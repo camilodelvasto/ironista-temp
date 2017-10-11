@@ -32,17 +32,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.form-intro {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-form {
-  @include breakpoint($sm) {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-
 </style>
