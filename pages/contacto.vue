@@ -52,7 +52,7 @@
 
 <script>
 import BlackFooter from '~/components/BlackFooter.vue'
-import TEstForm from '~/components/TEstForm.vue'
+import TestForm from '~/components/TestForm.vue'
 
 export default {
   transition: 'page',
