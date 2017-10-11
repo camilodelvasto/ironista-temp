@@ -7,7 +7,7 @@
           <p>Ironista trabaja con gobiernos locales y organizaciones de todos los tamaños, realizando proyectos de cambio cultural, organizacional y aprendizaje colectivo.</p>
         </div>
         <div>
-          <form netlify action="/success" name="contact-form" method="post">
+          <form netlify action="/success" name="contact-form">
             <div class="field">
               <label class="label"><h4>Nombre</h4></label>
               <div class="control">
