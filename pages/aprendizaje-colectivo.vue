@@ -9,17 +9,17 @@
       </div>
     </section>
 
-    <Footer />
+    <BlackFooter />
   </div><!--container-->
 </template>
 
 <script>
-import Footer from '~/components/Footer.vue'
+import BlackFooter from '~/components/BlackFooter.vue'
 
 export default {
   transition: 'page',
   components: {
-    Footer
+    BlackFooter
   }
 }
 </script>

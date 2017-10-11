@@ -50,19 +50,19 @@
       </div>
     </section>
 
-    <Footer />
+    <BlackFooter />
   </div><!--container-->
 </template>
 
 <script>
 import ChevronDown from '~/components/ChevronDown.vue'
-import Footer from '~/components/Footer.vue'
+import BlackFooter from '~/components/BlackFooter.vue'
 
 export default {
   transition: 'page',
   components: {
     ChevronDown,
-    Footer
+    BlackFooter
   },
   data () {
     return {
