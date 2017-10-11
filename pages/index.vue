@@ -38,38 +38,31 @@
               </figure>
             </div>
           </nuxt-link>
-          <nuxt-link :to="area.link">
-            <div class="card-content">
-              <h2>{{ area.title }}</h2>
+          <div class="card-content">
+            <h4>{{ area.title }}</h4>
+            <nuxt-link :to="area.link">
               <div class="content">
                 {{ area.intro }}
               </div>
-            </div>
-          </nuxt-link>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </section>
 
-
-    <section class="hero is-medium hero-final-statement">
-      <div class="hero-body">
-        <div class="container">
-          <h1>Está listo para ser un ironista?</h1>
-          <nuxt-link to="/contacto"><h1 class="h1-answer">Pregúnteme cómo.</h1></nuxt-link>
-        </div>
-      </div>
-    </section>
-
+    <Footer />
   </div><!--container-->
 </template>
 
 <script>
 import ChevronDown from '~/components/ChevronDown.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   transition: 'page',
   components: {
-    ChevronDown
+    ChevronDown,
+    Footer
   },
   data () {
     return {
@@ -182,27 +175,27 @@ export default {
 
   .card-content {
     padding: 1em 0;
+    font-size: 28px;
 
-    h2 {
-      font-size: 24px;
+    @include breakpoint($sm) {
+      font-size: 34px;
+    }
+  }
 
-      &:hover {
-        text-decoration: underline;
-      }
+  a {
+    .content {
+      color: $color-text;
     }
 
     &:hover {
-      .content {
-        text-decoration: none;
-      }
-    }    
-
-    color: $color-text;
-
+      text-decoration: underline;
+      color: $color-emphasis;
+    }
   }
 
   .card-image {
     overflow: hidden;
+    border-bottom: 8px solid $color-emphasis-alt;
   }
 
   figure {
@@ -218,23 +211,4 @@ export default {
     }
   }
 }
-
-.hero-final-statement {
-  background-color: $color-bg-dark;
-  position: relative;
-
-  h1 {
-    color: white;
-  }
-
-  h1.h1-answer {
-    text-align: right;
-    color: $color-emphasis-alt;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
 </style>

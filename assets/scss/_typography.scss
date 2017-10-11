@@ -44,6 +44,16 @@ html, body {
     }
   }
 
+  h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $color-bg-2;
+    font-family: $font-glacial;
+    letter-spacing: 0.3em;
+    margin-bottom: 5px;
+  }
+
+
   p {
     font-size: 20px;
     font-family: $font-secondary;
