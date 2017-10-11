@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout">
     <Navigation />
-    <section class="statement" id="aprendizaje-colectivo">
+    <section class="statement">
       <div class="container">
         <div class="font-text">
           <h1 v-if="error.statusCode === 404">Página no encontrada</h1>

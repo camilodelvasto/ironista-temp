@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <section class="statement" id="aprendizaje-colectivo">
+    <section class="statement">
       <div class="container">
         <div class="font-text">
           <h1>Hemos recibido su mensaje</h1>
