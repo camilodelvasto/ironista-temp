@@ -17,10 +17,12 @@
 
 <script>
 import Navigation from '~/components/Navigation.vue'
+import BlackFooter from '~/components/BlackFooter.vue'
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    BlackFooter
   },
   props: ['error']
 }
