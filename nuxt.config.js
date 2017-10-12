@@ -56,6 +56,9 @@ module.exports = {
   */
   plugins: ['~/plugins/buefy.js', '~/plugins/smooth-scroll.js'],
   css: ['~/assets/main.scss'],
+  modules: [
+    ['@nuxtjs/google-analytics', { ua: 'UA-15029066-26' }],
+  ],  
   build: {
     /*
     ** Run ESLINT on save
