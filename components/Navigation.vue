@@ -242,7 +242,8 @@ export default {
   },
   data () {
     return {
-      showMobileMenu: false
+      showMobileMenu: false,
+      scrollTop: 0
     }
   },
   mounted () {
@@ -253,6 +254,7 @@ export default {
       var vm = this
       vm.showMobileMenu = !vm.showMobileMenu
       if (vm.showMobileMenu) {
+        vm.scrollTop = window.scrollY
         vm.openMobileMenu()
       } else {
         vm.closeMobileMenu()
@@ -262,6 +264,7 @@ export default {
       var vm = this
       document.body.classList.remove('modal-open')
       vm.showMobileMenu = false
+      window.scrollTo(0, vm.scrollTop)
     },
     openMobileMenu () {
       var vm = this
