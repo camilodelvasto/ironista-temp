@@ -7,12 +7,20 @@
           <p>Ironista trabaja con gobiernos locales y organizaciones de todos los tamaños, realizando proyectos de cambio cultural, organizacional y aprendizaje colectivo.</p>
         </div>
         <div>
-          <TestForm />
-          <form netlify action="/success" name="contact-form">
+          <form action="https://d12naj40.insight.ly/WebToLead/Create" name="insightly_web_to_lead" method="post">
+            <input type="hidden" name="formId" value="CyZLBiAjCACnEw2h0QAvHw==" />
+            <input type="hidden" name="ResponsibleUser" value="1422507"/>
+            <input type="hidden" name="LeadSource" value="1967093"/>
             <div class="field">
               <label class="label"><h4>Nombre</h4></label>
               <div class="control">
-                <input class="input" type="text" placeholder="Nombre completo" name="name" required>
+                <input class="input" type="text" placeholder="Nombre" name="FirstName" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label"><h4>Apellido</h4></label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Apellido" name="LastName" required>
               </div>
             </div>
             <div class="field">
@@ -22,14 +30,26 @@
               </div>
             </div>
             <div class="field">
+              <label class="label"><h4>Teléfono</h4></label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Teléfono" name="phone" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label"><h4>Organización</h4></label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Organización" name="OrganizationName" required>
+              </div>
+            </div>
+            <div class="field">
               <label class="label"><h4>Asunto</h4></label>
               <div class="control">
                 <div class="select">
-                  <select>
-                    <option>Quiero realizar un proyecto con Ironista</option>
-                    <option>Quiero escribir para Ironista</option>
-                    <option>Quiero trabajar para Ironista</option>
-                    <option>Otro</option>
+                  <select name="Industry">
+                    <option value="hire-us">Quiero realizar un proyecto con Ironista</option>
+                    <option value="write-for-us">Quiero escribir para Ironista</option>
+                    <option value="work-for-us">Quiero trabajar para Ironista</option>
+                    <option value="other">Otro</option>
                   </select>
                 </div>
               </div>
@@ -37,7 +57,7 @@
             <div class="field">
               <label class="label"><h4>Mensaje</h4></label>
               <div class="control">
-                <textarea class="textarea" placeholder="Su mensaje" name="message" required=""></textarea>
+                <textarea class="textarea" placeholder="Su mensaje" name="Description" required=""></textarea>
               </div>
             </div>
             <button class="button button-cta" type="submit">Enviar</button>
@@ -52,13 +72,16 @@
 
 <script>
 import BlackFooter from '~/components/BlackFooter.vue'
-import TestForm from '~/components/TestForm.vue'
 
 export default {
   transition: 'page',
   components: {
-    BlackFooter,
-    TestForm
+    BlackFooter
+  },
+  data () {
+    return {
+      empty: ' '
+    }
   }
 }
 </script>

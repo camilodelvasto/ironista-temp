@@ -146,7 +146,7 @@
     }
 
     a.navbar-item {
-      font-family: $font-primary;
+      font-family: $font-secondary;
       text-align: center;
       font-size: 30px;
 
@@ -211,7 +211,7 @@
 
       a.navbar-item {
         font-size: 16px;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         text-transform: lowercase;
         letter-spacing: 1px;
 
