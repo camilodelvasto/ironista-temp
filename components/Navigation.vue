@@ -4,9 +4,7 @@
       v-bind:class="{ 'expanded': showMobileMenu }"
     >
       <div class="container is-fluid navbar-container">
-        <div class="navbar-brand"
-          v-on:click="closeMobileMenu()"
-        >
+        <div class="navbar-brand">
           <Logo />
         </div>
 
@@ -248,6 +246,7 @@ export default {
   },
   mounted () {
     this.showMobileMenu = false
+    this.scrollTop = 0
   },
   methods: {
     toggleMobileMenu () {
@@ -258,13 +257,13 @@ export default {
         vm.openMobileMenu()
       } else {
         vm.closeMobileMenu()
+        window.scrollTo(0, vm.scrollTop)
       }
     },
     closeMobileMenu () {
       var vm = this
       document.body.classList.remove('modal-open')
       vm.showMobileMenu = false
-      window.scrollTo(0, vm.scrollTop)
     },
     openMobileMenu () {
       var vm = this
