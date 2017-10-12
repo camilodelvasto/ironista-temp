@@ -32,7 +32,7 @@
             <div class="field">
               <label class="label"><h4>Teléfono</h4></label>
               <div class="control">
-                <input class="input" type="text" placeholder="Teléfono" name="phone" required>
+                <input class="input" type="text" placeholder="+57..." name="phone" required>
               </div>
             </div>
             <div class="field">
