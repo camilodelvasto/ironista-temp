@@ -70,9 +70,9 @@ export default {
         '<span class="title-standard">No se trata de descubrir la fórmula para cambiar el mundo, sino de </span><span class="title-emphasis">imaginar una nueva forma de describirnos </span><span class="title-standard">como sociedad.</span>'
       ],
       areas: [
-        { title: 'Violencia', intro: 'En la crianza, en la pareja, en la escuela, en la calle', link: 'violencia', img: 'https://res.cloudinary.com/startics/image/upload/v1507670982/violencia_ysx2gv.jpg' },
-        { title: 'Gestión del riesgo', intro: 'Seguridad vial, seguridad en internet, decisiones financieras', link: 'riesgo', img: 'https://res.cloudinary.com/startics/image/upload/v1507670983/riesgo_w5ptw4.jpg' },
-        { title: 'Irracionalidad', intro: 'Consumo irracional, sostenibilidad', link: 'irracionalidad', img: 'https://res.cloudinary.com/startics/image/upload/v1507670988/irracionalidad_ksapmi.jpg' }
+        { title: 'Violencia', intro: 'En la crianza, en la pareja, en la escuela, en la calle', link: 'violencia', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/violencia_qryll2.jpg' },
+        { title: 'Gestión del riesgo', intro: 'Seguridad vial, seguridad en internet, decisiones financieras', link: 'riesgo', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/riesgo_dxue1s.jpg' },
+        { title: 'Irracionalidad', intro: 'Consumo irracional, sostenibilidad', link: 'irracionalidad', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/irracionalidad_ijnyty.jpg' }
       ],
       currentStatement: 0,
       timer: null,
