@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     startRotation: function () {
-      this.timer = setInterval(this.next, 1000000)
+      this.timer = setInterval(this.next, 10000)
     },
     next: function () {
       this.currentStatement++

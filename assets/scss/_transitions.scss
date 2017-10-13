@@ -1,6 +1,6 @@
 /* page */
 .page-enter-active, .page-leave-active {
-  transition: opacity .5s;
+  transition: opacity .25s;
 }
 .page-enter, .page-leave-active {
   opacity: 0;
@@ -8,7 +8,7 @@
 
 /* bounce */
 .bounce-enter-active {
-  animation: bounceIn .5s;
+  animation: bounceIn .3s;
 }
 .bounce-leave-active {
   animation: bounceOut .3s;

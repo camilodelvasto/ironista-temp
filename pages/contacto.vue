@@ -74,7 +74,7 @@
 import BlackFooter from '~/components/BlackFooter.vue'
 
 export default {
-  transition: 'page',
+  transition: 'bounce',
   components: {
     BlackFooter
   },
