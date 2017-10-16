@@ -3,7 +3,7 @@
     <section id="contacto">
       <div class="container">
         <div class="form-intro">
-          <h1>Entremos a hablar</h1>
+          <h1>¡Hablemos!</h1>
           <p>Ironista trabaja con gobiernos locales y organizaciones de todos los tamaños, realizando proyectos de cambio cultural, organizacional y aprendizaje colectivo.</p>
         </div>
         <div>
