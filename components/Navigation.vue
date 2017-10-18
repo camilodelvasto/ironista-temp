@@ -25,6 +25,7 @@
         >
           <nuxt-link exact to="/" class="navbar-item">Inicio</nuxt-link>
           <nuxt-link to="/aprendizaje-colectivo" class="navbar-item">Aprendizaje Colectivo</nuxt-link>
+          <a class="navbar-item" href="https://medium.com/ironista" target="_blank">Blog</a>
           <nuxt-link to="/contacto" class="navbar-item">Contacto</nuxt-link>
         </div>
         <div class="navbar-end"
@@ -153,7 +154,7 @@
       }
 
       @include breakpoint($sm) {
-        font-size: 50px;
+        font-size: 40px;
         text-align: right;
       }
 
