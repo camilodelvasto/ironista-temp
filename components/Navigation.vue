@@ -32,7 +32,7 @@
           v-on:click="closeMobileMenu()"
         >
           <nuxt-link exact to="/" class="navbar-item">Acerca de</nuxt-link>
-          <nuxt-link to="/how" class="navbar-item">Cómo</nuxt-link>
+          <nuxt-link to="/como-lo-hacemos" class="navbar-item">¿Cómo?</nuxt-link>
           <nuxt-link to="/contacto" class="navbar-item">Contacto</nuxt-link>
         </div>
       </div>

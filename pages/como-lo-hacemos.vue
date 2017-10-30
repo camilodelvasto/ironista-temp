@@ -1,11 +1,12 @@
 <template>
-  <div class="index">
-    <section class="statement">
-      <div class="container">
-        <div class="font-text">
-          <h3>Nuestro punto de partida es la esperanza y la convicción de que podemos ser mejores juntos.</h3>
-          <p>a través del aprendizaje colectivo (inter-subjetivo).</p>
-          <nuxt-link to="/como-lo-hacemos"><button class="next slide">¿Cómo lo hacemos?</button></nuxt-link>
+  <div class="index how">
+    <section class="statement hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="statement-large">
+            <span class="st-1">El primer paso para transformar es comprender. Porque nuevas comprensiones son en sí mismas grandes transformaciones. Por eso nuestro proceso inicia siempre por una profunda comprensión de las creencias, expectativas, explicaciones y juegos de lenguaje de los grupos sociales. A partir de una comprensión renovada iniciamos procesos de aprendizaje colectivo mediante el juego, el liderazgo comunicativo y la comunicación intensificada.</span>
+            <nuxt-link to="/contacto">Conozca más de lo que hacemos.</nuxt-link>
+          </div>
         </div>
       </div>
     </section>
@@ -13,53 +14,43 @@
 </template>
 
 <script>
+import { TweenMax, Back } from 'gsap'
+
 export default {
-  transition: 'page',
-  data () {
-    return {
-      statement: {
-        main: 'Para un ironista el camino para cambiarnos como sociedad es la redescripción.',
-        sub: 'No se trata de descubrir la fórmula para cambiar el mundo, sino de imaginar una nueva forma de describirnos como sociedad.'
-      },
-      image: require('~/assets/img/street-art-graffiti.jpg')
+  transition: {
+    mode: 'out-in',
+    css: false,
+    beforeEnter (el) {
+      TweenMax.set(el, {
+        transformPerspective: 100,
+        perspective: 300,
+        transformStyle: 'preserve-3d'
+      })
+    },
+    enter (el, done) {
+      TweenMax.to(el, 1, {
+        rotationY: 360,
+        transformOrigin: '50% 50%',
+        ease: Back.easeOut
+      })
+      done()
+    },
+    leave (el, done) {
+      TweenMax.to(el, 1, {
+        rotationY: 0,
+        transformOrigin: '50% 50%',
+        ease: Back.easeIn
+      })
+      done()
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-.title-wrapper {
-
-  @include breakpoint($sm) {
-    text-align: right;
+  .st-1 {
+    margin-bottom: 30px;
+    display: block;
   }
-
-  .title {
-    font-size: 40px;
-    background: rgba($color-emphasis,0.7);
-    display: inline;
-    line-height: 1.38;
-
-    @include breakpoint($sm) {
-      font-size: 55px;
-    }
-  }
-}
-
-.statement {
-  margin-top: 40px;
-}
-
-.subtitle {
-  font-size: 30px;
-  padding-top: 20px;
-  display: block;
-  text-align: right;
-}
-
-.hero.is-primary {
-  background-color: transparent;
-  background-size: cover;
-}
 
 </style>
