@@ -27,7 +27,9 @@
         <p>Todos estos retos requieren de un gran número de transformaciones simultáneas en nuestras prácticas, pero también en nuestras creencias compartidas, narrativas, conocimientos, explicaciones, deseos y expectativas.</p>
         <p>El único camino para lograr estas transformaciones es el aprendizaje colectivo, que es un lugar de experimentación interdisciplinaria, que conjuga los conocimientos más relevantes de las ciencias sociales en los últimos treinta años con las infinitas y aún inimaginadas posibilidades creativas que brinda el arte, la comunicación, la pedagogía y la innovación.</p>
 
-
+        <div class="desktop-reduced">
+          <ShareTools />
+        </div>
       </div>
     </section>
 
@@ -37,15 +39,32 @@
 
 <script>
 import BlackFooter from '~/components/BlackFooter.vue'
+import ShareTools from '~/components/ShareTools.vue'
 
 export default {
   transition: 'page',
   components: {
-    BlackFooter
+    BlackFooter,
+    ShareTools
   },
   data () {
     return {
       pageImg: require('~/assets/img/bebiendo.jpg')
+    }
+  },
+  head () {
+    var vm = this
+    return {
+      title: 'Aprendizaje Colectivo',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Nuestro comportamiento social no se rige tan sólo por criterios individuales sino por nuestras representaciones y expectativas sobre el comportamiento de los demás.' },
+        { hid: 'og:title', property: 'og:title', content: 'Aprendizaje Colectivo' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:image', property: 'og:image', content: this.prodBaseUrl + vm.pageImg },
+        { hid: 'og:url', property: 'og:url', content: this.prodBaseUrl + this.$route.path },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Ironista' },
+        { hid: 'og:description', property: 'og:description', content: 'Nuestro comportamiento social no se rige tan sólo por criterios individuales sino por nuestras representaciones y expectativas sobre el comportamiento de los demás.' }
+      ]
     }
   }
 }

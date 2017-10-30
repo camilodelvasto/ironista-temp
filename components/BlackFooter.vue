@@ -37,6 +37,10 @@
 
   a {
     color: $color-emphasis-alt;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   h1.h1-answer {

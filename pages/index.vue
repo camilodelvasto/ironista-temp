@@ -79,6 +79,21 @@ export default {
       heroImage: require('~/assets/img/street-art-graffiti.jpg')
     }
   },
+  head () {
+    var vm = this
+    return {
+      title: 'Ironista',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Transformando nuestra descripción como sociedad.' },
+        { hid: 'og:title', property: 'og:title', content: 'Ironista' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:image', property: 'og:image', content: this.prodBaseUrl + vm.heroImage },
+        { hid: 'og:url', property: 'og:url', content: this.prodBaseUrl + this.$route.path },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Ironista' },
+        { hid: 'og:description', property: 'og:description', content: 'Transformando nuestra descripción como sociedad.' }
+      ]
+    }
+  },
   mounted () {
     this.startRotation()
   },

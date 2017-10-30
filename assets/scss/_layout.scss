@@ -12,3 +12,11 @@ body.modal-open {
 html {
   overflow: visible !important;
 }
+
+.desktop-reduced {
+  @include breakpoint($sm) {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }  
+}
