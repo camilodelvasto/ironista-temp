@@ -52,7 +52,7 @@
 export default {
   computed: {
     thisRoute () {
-      return this.prodBaseUrl + this.$route.fullPath
+      return 'https://ironista.com' + this.$route.fullPath
     }
   }
 }
