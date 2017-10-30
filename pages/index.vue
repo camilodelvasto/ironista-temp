@@ -70,9 +70,9 @@ export default {
         '<span class="title-standard">No se trata de descubrir la fórmula para cambiar el mundo, sino de </span><span class="title-emphasis">imaginar una nueva forma de describirnos </span><span class="title-standard">como sociedad.</span>'
       ],
       areas: [
-        { title: 'Violencia', intro: '¿Cómo lograr crear mecanismos de comunicación alternativos a la violencia?', link: 'violencia', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/violencia_qryll2.jpg' },
+        { title: 'Violencia', intro: '¿Cómo crear mecanismos de comunicación alternativos a la violencia?', link: 'violencia', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/violencia_qryll2.jpg' },
         { title: 'Gestión del riesgo', intro: '¿Cómo aprendemos a cuidar lo que valoramos?', link: 'riesgo', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/riesgo_dxue1s.jpg' },
-        { title: 'Irracionalidad', intro: '¿Cómo aprendemos a tomar las decisiones que más nos convienen el el futuro?', link: 'irracionalidad', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/irracionalidad_ijnyty.jpg' }
+        { title: 'Irracionalidad', intro: '¿Cómo aprendemos a tomar las decisiones que más nos convienen en el futuro?', link: 'irracionalidad', img: 'https://res.cloudinary.com/startics/image/upload/v1507925299/irracionalidad_ijnyty.jpg' }
       ],
       currentStatement: 0,
       timer: null,
