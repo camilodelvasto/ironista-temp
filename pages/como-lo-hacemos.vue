@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="statement-large">
-            <span class="st-1">El primer paso para transformar es comprender. Porque nuevas comprensiones son en sí mismas grandes transformaciones. Por eso nuestro proceso inicia siempre por una profunda comprensión de las creencias, expectativas, explicaciones y juegos de lenguaje de los grupos sociales. A partir de una comprensión renovada iniciamos procesos de aprendizaje colectivo mediante el juego, el liderazgo comunicativo y la comunicación intensificada.</span>
+            <span class="st-1">El primer paso para transformar es comprender. Porque nuevas comprensiones son en sí mismas grandes transformaciones. A partir de una comprensión renovada iniciamos procesos de aprendizaje colectivo mediante el juego, el liderazgo comunicativo y la comunicación intensificada.</span>
             <nuxt-link to="/contacto">Conozca más de lo que hacemos.</nuxt-link>
           </div>
         </div>
