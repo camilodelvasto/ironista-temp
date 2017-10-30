@@ -66,4 +66,92 @@ html, body {
     color: $color-bg-dark;
   }
 
+  blockquote {
+    font-style: italic;
+    font-family: $font-secondary;
+    font-size: 24px;
+    text-align: right;
+    border-right: 12px solid $color-emphasis-alt;
+    padding-right: 40px;
+    margin-bottom: 40px;
+
+    @include breakpoint($sm) {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include breakpoint($md) {
+      font-size: 32px;
+      max-width: 60%;
+    }
+  }
+
+  .page-content {
+    h1 {
+      color: $color-bg-dark;
+      font-size: 48px;
+      margin-bottom: 32px;
+    }
+
+    h4 {
+      text-align: left;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include breakpoint($sm) {
+        width: 60%;
+      }
+    }
+
+    p {
+      text-align: left;
+      margin-bottom: 20px;
+
+      @include breakpoint($sm) {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    figure {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      @include breakpoint($sm) {
+        flex-direction: row;
+      }
+
+      @include breakpoint($md) {
+        justify-content: center;
+      }
+
+      img {
+        @include breakpoint($sm) {
+          transform: translateX(-20px);
+        }
+      }
+
+      figcaption {
+        font-family: $font-secondary;
+        color: $color-text-gray;
+        font-weight: bold;
+        bottom: 10px;
+        right: 10px;
+        text-align: right;
+        margin-top: 10px;
+
+        @include breakpoint($sm) {
+          top: 0;
+          right: 0;
+          width: 20%;
+          text-align: left;
+        }
+      }
+    }
+
+  }
 }
