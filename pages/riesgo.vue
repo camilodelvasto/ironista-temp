@@ -7,8 +7,8 @@
         </div>
 
         <figure>
-          <img v-bind:src="pageImg" alt="Chicos bebiendo">
-          <figcaption>Comportamiento de grupo: los individuos no se comportan igual cuando están solos.</figcaption>
+          <img v-bind:src="pageImg" alt="Peatones en Bucaramanga">
+          <figcaption>El riesgo va más allá de la integridad humana.</figcaption>
         </figure>
 
         <p>Los riesgos emanan cada vez menos del mundo natural y más de la elección y acción humana. La vida moderna presenta un mayor número de riesgos ocasionados puramente por sociedad  y sus avances como la manipulación genética, la persistencia de armas nucleares, la propagación del VIH, los accidentes químicos o las explosiones nucleares, o incluso los accidentes aéreos y automovilísticos.</p>
@@ -16,7 +16,9 @@
         <p>Por esta razón, los distintos grupos humanos, países y culturas, tienen formas muy distintas de enfrentar el riesgo. En las sociedades modernas occidentales el manejo del riesgo se ha convertido en una de las principales actividades y en un indicador del éxito de la sociedad. Para ello han elaborado complejos sistemas de cálculo del riesgo e instituciones para reducirlo.</p>
         <p>La función del manejo del riesgo es anticipar los resultados de situaciones de riesgo e incorporar la incertidumbre dentro de la toma de decisiones. El manejo del riesgo implica evitar resultados indeseados en ocasiones, y que el impacto de lo inevitable sea mitigado, siempre que las conexiones entre causa y efecto se establezcan correctamente (Jaeger et al. 2001, p.18). En el primer caso, el manejo del riesgo orientado a evitar lo indeseable podría llamarse prevención y comprende normas, técnicas y artefactos, con frecuencia asociados a prácticas de seguridad. Por el contrario, el manejo de riesgo orientado a mitigar el impacto de lo inevitable podría denominarse transferencia del riesgo, dentro de la cual se encuentra el seguro como principal instrumento para la transferencia de riesgo. Más adelante profundizaremos en cada uno de estas formas de manejo del riesgo.</p>
 
-
+        <div class="desktop-reduced">
+          <ShareTools />
+        </div>
       </div>
     </section>
 
@@ -26,15 +28,17 @@
 
 <script>
 import BlackFooter from '~/components/BlackFooter.vue'
+import ShareTools from '~/components/ShareTools.vue'
 
 export default {
   transition: 'page',
   components: {
-    BlackFooter
+    BlackFooter,
+    ShareTools
   },
   data () {
     return {
-      pageImg: require('~/assets/img/bebiendo.jpg')
+      pageImg: require('~/assets/img/peatones.jpg')
     }
   }
 }
