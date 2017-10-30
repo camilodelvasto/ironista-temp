@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <section class="statement" id="aprendizaje-colectivo">
+    <section class="statementx" id="aprendizaje-colectivo">
       <div class="container page-content">
         <div class="font-text">
           <h1>Aprendizaje colectivo</h1>
